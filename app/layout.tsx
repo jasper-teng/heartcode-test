@@ -39,10 +39,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export function ModeToggle() {
-  const { setTheme } = useTheme()
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{

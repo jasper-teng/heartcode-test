@@ -28,6 +28,10 @@ const QuizTemplate = ({ a1, a2, a3, a4, correct }: { a1: string, a2: string, a3:
     function submit(){
             setCorrect(correctans + " correct")
         }
+    
+    function reset(){
+        setCorrect("w-full p-5 mb-5")
+    }
 
     return (
 
@@ -39,15 +43,15 @@ const QuizTemplate = ({ a1, a2, a3, a4, correct }: { a1: string, a2: string, a3:
                 </CardHeader>
                 <CardContent>
 
-                    <Button id="1" className={correct == 1 ? correctans : generalclass}>{a1}</Button>
-                    <Button id="2" className={correct == 2 ? correctans : generalclass}>{a2}</Button>
-                    <Button id="3" className={correct == 3 ? correctans : generalclass}>{a3}</Button>
-                    <Button id="4" className={correct == 4 ? correctans : generalclass}>{a4}</Button>
+                    <Button className={correct == 1 ? correctans : generalclass}>{a1}</Button>
+                    <Button className={correct == 2 ? correctans : generalclass}>{a2}</Button>
+                    <Button className={correct == 3 ? correctans : generalclass}>{a3}</Button>
+                    <Button className={correct == 4 ? correctans : generalclass}>{a4}</Button>
 
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                    <Button variant="outline">Cancel</Button>
-                    <Button onClick={() => submit() }>Deploy</Button>
+                    <Button variant="outline" onClick={()=>reset()}>Reset</Button>
+                    <Button onClick={() => submit() }>Submit</Button>
                 </CardFooter>
             </Card>
 

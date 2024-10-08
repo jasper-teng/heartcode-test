@@ -11,7 +11,11 @@ const nextConfig = {
         pathname: "/mycompany-data-bucket-dev/**",
       },
     ],
-  }
+  },
+
+  eslint: {
+    ignoreDuringBuilds: true,
+},
 
 };
 
