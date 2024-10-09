@@ -8,8 +8,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
 import { Toggle } from "@/components/ui/toggle";
-
-import localFont from "next/font/local";
+import localFont from "next/font/local"; 
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -28,6 +27,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+
+import { useToast } from "@/hooks/use-toast"
+
+import { Toaster } from "@/components/ui/toaster";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -44,7 +48,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
+    
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -55,6 +61,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          
+
           <div className="grid items-center justify-items-left p-10">
             <NavigationMenu>
               <NavigationMenuList>
@@ -75,7 +83,11 @@ export default function RootLayout({
             </NavigationMenu>
       </div>
       {children}
+      
+      <Toaster />
+      
       </ThemeProvider>
+      
     </body>
     </html >
   );

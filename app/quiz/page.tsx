@@ -16,8 +16,6 @@ import QuizTemplate from "@/components/ui/quiztemplate"
 import Turtle from "@/app/assets/turtle.png"
 
 
-
-
 export default function AboutMe() {
   return (
 
@@ -35,7 +33,7 @@ export default function AboutMe() {
         
         <b>THIS IS THE QUIZ PAGE.</b>
 
-        < QuizTemplate a1="asd" a2="adad" a3="asdasd" a4="zdsa" correct={2}/>
+        < QuizTemplate qn="adslkjsadlkjaldskjsad" a1="asd" a2="adad" a3="asdasd" a4="zdsa" correct={2}/>
 
         <a>I was from Singapore Polytechnic, and am currently studying in Singapore Management University!</a>
 

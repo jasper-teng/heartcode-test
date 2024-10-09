@@ -13,12 +13,15 @@ import {
 
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 
+import { FlipWords } from "@/components/ui/flip-words";
+
 import Turtle from "@/app/assets/turtle.png"
 
 
 
 
 export default function AboutMe() {
+  const word: string[] = ["I play saxophone", "I boulder", " I play bass"]
   return (
 
   
@@ -42,11 +45,7 @@ export default function AboutMe() {
 
 
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li>
-            Playing Instruments (Saxophone, Bass)
-          </li>
-          <li>Bouldering</li>
-          <li>Playing Games</li>
+            <FlipWords words={word} />
         </ol>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

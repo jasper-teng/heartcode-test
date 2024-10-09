@@ -17,7 +17,7 @@ import {
 
 
 
-const QuizTemplate = ({ a1, a2, a3, a4, correct }: { a1: string, a2: string, a3: string, a4: string, correct: number }) => {
+const QuizTemplate = ({ qn, a1, a2, a3, a4, correct }: { qn:string, a1: string, a2: string, a3: string, a4: string, correct: number }) => {
 
     var qnstate = ""
     var generalclass = "w-full p-5 mb-5"
@@ -39,7 +39,7 @@ const QuizTemplate = ({ a1, a2, a3, a4, correct }: { a1: string, a2: string, a3:
             <Card>
                 <CardHeader>
                     <CardTitle>Question!</CardTitle>
-                    <CardDescription>lorem ipsum sample text bla bla bla bla bla bla bla.</CardDescription>
+                    <CardDescription>{qn}</CardDescription>
                 </CardHeader>
                 <CardContent>
 
