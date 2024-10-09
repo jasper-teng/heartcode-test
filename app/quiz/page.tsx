@@ -22,7 +22,7 @@ export default function AboutMe() {
   
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-18 gap-16 sm:p-20">
 
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start ">
       <Image
           src={Turtle}
           alt="Next.js logo"
@@ -35,18 +35,10 @@ export default function AboutMe() {
 
         < QuizTemplate qn="adslkjsadlkjaldskjsad" a1="asd" a2="adad" a3="asdasd" a4="zdsa" correct={2}/>
 
-        <a>I was from Singapore Polytechnic, and am currently studying in Singapore Management University!</a>
+        < QuizTemplate qn="adslkjsadlkjaldskjsad" a1="asd" a2="adad" a3="asdasd" a4="zdsa" correct={2}/>
+        < QuizTemplate qn="adslkjsadlkjaldskjsad" a1="asd" a2="adad" a3="asdasd" a4="zdsa" correct={2}/>
+        < QuizTemplate qn="adslkjsadlkjaldskjsad" a1="asd" a2="adad" a3="asdasd" a4="zdsa" correct={2}/>
 
-        <a>Here are some of my hobbies:</a>
-
-
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li>
-            Playing Instruments (Saxophone, Bass)
-          </li>
-          <li>Bouldering</li>
-          <li>Playing Games</li>
-        </ol>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
