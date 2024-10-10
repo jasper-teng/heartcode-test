@@ -1,5 +1,6 @@
 import 'dotenv/config';
-import { drizzle, eq } from 'drizzle-orm';
+import { eq } from 'drizzle-orm';
+import { drizzle } from 'drizzle-orm/connect';
 import { usersTable } from './db/schema';
 async function main() {
   const db = await drizzle("vercel-postgres");
