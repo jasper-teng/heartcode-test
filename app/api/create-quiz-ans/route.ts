@@ -11,7 +11,7 @@ export async function GET(request: Request) {
   }
   
   try {
-    await sql`INSERT INTO quizres (correct, timestamp) VALUES (${data}, NOW());`;
+    await sql`INSERT INTO quizres(quiz, timestamp) VALUES(${data}, NOW());`;
   } catch (error) {
     return NextResponse.json({ error }, { status: 500 });
   }

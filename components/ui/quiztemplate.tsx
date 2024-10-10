@@ -31,7 +31,10 @@ const QuizTemplate = ({ qn, a1, a2, a3, a4, correct }: { qn:string, a1: string, 
                 ans = "true";
             }
             setCorrect(correctans + " correct");
-            const res = fetch("http://localhost:3000/api/create-quiz-ans?correct=" + ans);
+            const res = fetch("http://localhost:3000/api/create-quiz-ans?correct=" + ans).then(data =>{
+                console.log(data)
+            }
+            )
         }
     
     function reset(){

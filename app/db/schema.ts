@@ -10,3 +10,5 @@ export const quizTable = pgTable("quizres", {
     quiz: boolean().notNull(),
     timestamp: timestamp().notNull()
 })
+
+export type SelectQuiz = typeof quizTable.$inferSelect;

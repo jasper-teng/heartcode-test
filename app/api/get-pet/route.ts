@@ -1,5 +1,7 @@
 import { sql } from '@vercel/postgres';
 import { NextResponse } from 'next/server';
+import {db} from  "@/app/db/index";
+import { quizTable } from "@/app/db/schema"
  
 export async function GET(request: Request) {
  
