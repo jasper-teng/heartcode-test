@@ -26,7 +26,7 @@ const QuizTemplate = ({ qn, a1, a2, a3, a4, correct }: { qn:string, a1: string, 
 
     
     function submit(){
-            var ans = false;
+            var ans = "false";
             if(ansstate == correct){
                 ans = "true";
             }
