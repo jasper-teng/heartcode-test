@@ -6,7 +6,7 @@ export async function GET(request: Request) {
   const correct = searchParams.get('correct');
 
   var data = false;
-  if(correct == true){
+  if(correct == "true"){
     data = true;
   }
   
